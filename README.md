@@ -13,7 +13,7 @@
 ---
 
   ## Installation:
-  #### Install inquirer.js with 'npm i inquirer'
+  #### Install inquirer.js with 'npm i inquirer' in the command line
 
   ## Usage:
   #### To use, run 'node index.js' from the root directory in the command line. Once running answer all questions until you are done. Use 'complete' option to exit questionnaire.
@@ -24,8 +24,8 @@
   ## Tests:
   #### Open terminal and navigate to the root folder, then run 'npm test'. 
   
-  ![Page Example](./dist/images/website.png)
-  ![Command line questionnaire Example](./dist/images/cmdquestions.png)
+  ![Page Example](./images/website.png)
+  ![Command line questionnaire Example](./images/cmdquestions.png)
 
   ## License:
   #### None
