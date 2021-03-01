@@ -15,7 +15,7 @@ function template(managerArr, employeeArr) {
                     <div class="card-body">
                         Name: ${employeeArr[i].getName()}<br>
                         Employee ID: ${employeeArr[i].getID()}<br>
-                        Email: <a href="${employeeArr[i].getEmail()}">${employeeArr[i].getEmail}<br>
+                        Email: <a href="${employeeArr[i].getEmail()}">${employeeArr[i].getEmail()}<br>
                         GitHub: <a href="https://github.com/${employeeArr[i].getGitHub()}">${employeeArr[i].getGitHub()}</a>
                     </div>
                 </div>
