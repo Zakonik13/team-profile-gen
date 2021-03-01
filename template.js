@@ -9,9 +9,8 @@ function template(managerArr, employeeArr) {
 
         // Checks for type of employee then pushes to the corresponding array
         if (employeeArr[i].getRole() === 'Engineer') {
-            
             const engineerHTML = `
-            <div class="col-2">
+            <div class="col-3">
                 <div class="card">
                     <div class="card-body">
                         Name: ${employeeArr[i].getName()}<br>
@@ -21,13 +20,10 @@ function template(managerArr, employeeArr) {
                     </div>
                 </div>
             </div>`
-
             engineerList.push(engineerHTML);
-        
         } else if (employeeArr[i].getRole() === 'Intern') {
-
             const internHTML = `
-            <div class="col-2">
+            <div class="col-3">
                 <div class="card">
                     <div class="card-body">
                         Name: ${employeeArr[i].getName()}<br>
@@ -37,16 +33,9 @@ function template(managerArr, employeeArr) {
                     </div>
                 </div>
             </div>`
-
             internList.push(internHTML);
         };
     }
-
-    // function myFunction() {
-    //     for (i = 0; i < engineerList.length; i++) {
-    //         return engineerList[i];
-    //     }
-    // }
     
     // Returns entire HTML page including the two arrays from above and are distributed below
     return `
@@ -66,22 +55,25 @@ function template(managerArr, employeeArr) {
             <div class="managers">
                 <h3>Manager</h3>
                 <div class="manager">
-                    Name: ${managerArr[0].getName()}<br>
-                    ID: ${managerArr[0].getID()}<br>
-                    Email: ${managerArr[0].getEmail()}<br>
-                    Office: ${managerArr[0].getOffice()}
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-body">
+                            Name: ${managerArr[0].getName()}<br>
+                            ID: ${managerArr[0].getID()}<br>
+                            Email: ${managerArr[0].getEmail()}<br>
+                            Office: ${managerArr[0].getOffice()}
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="container">
             <h3>Engineers</h3>
                 <div class="row">
-                    <div class="engineers">
-                        ${engineerList}
-                    </div>
+                    ${engineerList.join('')}
                 </div>
-                <div class="interns">
-                    <h3>Intern</h3>
-                    ${internList.pop()}
+            <h3>Intern</h3>
+                <div class="row">
+                    ${internList.join('')}
                     
                 </div>
             </div>
