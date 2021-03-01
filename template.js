@@ -15,7 +15,7 @@ function template(managerArr, employeeArr) {
                     <div class="card-body">
                         Name: ${employeeArr[i].getName()}<br>
                         Employee ID: ${employeeArr[i].getID()}<br>
-                        Email: <a href="${employeeArr[i].getEmail()}">${employeeArr[i].getEmail()}<br>
+                        Email: <a href="mailto:${employeeArr[i].getEmail()}">${employeeArr[i].getEmail()}<br>
                         GitHub: <a href="https://github.com/${employeeArr[i].getGitHub()}">${employeeArr[i].getGitHub()}</a>
                     </div>
                 </div>
@@ -28,7 +28,7 @@ function template(managerArr, employeeArr) {
                     <div class="card-body">
                         Name: ${employeeArr[i].getName()}<br>
                         Employee ID: ${employeeArr[i].getID()}<br>
-                        Email: <a href="${employeeArr[i].getEmail()}">${employeeArr[i].getEmail()}</a><br>
+                        Email: <a href="mailto:${employeeArr[i].getEmail()}">${employeeArr[i].getEmail()}</a><br>
                         School: ${employeeArr[i].getSchool()}
                     </div>
                 </div>
@@ -60,7 +60,7 @@ function template(managerArr, employeeArr) {
                             <div class="card-body">
                             Name: ${managerArr[0].getName()}<br>
                             ID: ${managerArr[0].getID()}<br>
-                            Email: <a href="${managerArr[0].getEmail()}">${managerArr[0].getEmail()}</a><br>
+                            Email: <a href="mailto:${managerArr[0].getEmail()}">${managerArr[0].getEmail()}</a><br>
                             Office: ${managerArr[0].getOffice()}
                         </div>
                     </div>
